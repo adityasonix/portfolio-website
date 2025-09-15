@@ -21,7 +21,7 @@ const Welcome = () => {
           <div className='grid grid-cols-2 gap-8'>
             {
               routeOptions.map((routeOption) => (
-                  <HomeOptionCard routeOption={routeOption} />
+                  <HomeOptionCard key={routeOption.id} routeOption={routeOption} />
               ))
             }
           </div>

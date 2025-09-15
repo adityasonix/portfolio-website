@@ -7,3 +7,7 @@
 .optionButton {
   @apply cursor-pointer
 }
+
+.connectButton {
+  @apply cursor-pointer text-black bg-white font-medium rounded-full px-9 py-2.5 text-center inline-flex items-center me-2 mb-2
+}
