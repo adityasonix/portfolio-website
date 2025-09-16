@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --text-tiny: 0.6rem;
+}
+
 .navButton {
   @apply cursor-pointer text-gray-100 font-bold text-sm px-2 py-1 border-2 border-gray-100 hover:bg-gray-100 hover:text-gray-800 rounded-lg transition duration-300
 }
@@ -9,5 +13,17 @@
 }
 
 .connectButton {
-  @apply cursor-pointer text-black bg-white font-medium rounded-full px-9 py-2.5 text-center inline-flex items-center me-2 mb-2
+  @apply cursor-pointer text-black font-medium rounded-full p-1 text-center inline-flex items-center mx-9 mb-2
+}
+
+.connectAnchor {
+  @apply flex flex-col justify-center rounded-full px-9 py-1.5 bg-white
+}
+
+.connectDescription {
+  @apply text-tiny sm:text-xs max-w-xs sm:max-w-md text-gray-500 sm:pt-1
+}
+
+.connectLinkTitle {
+  @apply flex items-center justify-center text-base sm:text-2xl
 }
