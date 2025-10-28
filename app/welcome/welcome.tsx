@@ -4,10 +4,10 @@ import NavBar from '../components/navbar.jsx'
 const Welcome = () => {
 
   const routeOptions = [
-    {"id": "one", "text": "Who I Am", "icon": "man.svg"}, 
-    {"id": "two", "text": "Shosetsu Shelf", "icon": "book.svg"}, 
-    {"id": "three", "text": "Code & Career", "icon": "tech.svg"}, 
-    {"id": "four", "text": "Let\'s Connect", "icon": "connect.svg"}
+    {"id": "one", "text": "Who I Am", "icon": "man.svg", "link": "aboutme"}, 
+    {"id": "two", "text": "Shosetsu Shelf", "icon": "book.svg", "link": "connect"}, 
+    {"id": "three", "text": "Code & Career", "icon": "tech.svg", "link": "procareer"}, 
+    {"id": "four", "text": "Let\'s Connect", "icon": "connect.svg", "link": "connect"}
   ];
 
   return (

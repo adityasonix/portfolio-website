@@ -27,3 +27,11 @@
 .connectLinkTitle {
   @apply flex items-center justify-center text-base sm:text-2xl
 }
+
+.careerTimeline {
+  @apply flex items-center justify-center text-base
+}
+
+.careerDescription {
+  @apply text-tiny sm:text-xs max-w-xs sm:max-w-md text-gray-500 sm:pt-1 justify-start
+}
