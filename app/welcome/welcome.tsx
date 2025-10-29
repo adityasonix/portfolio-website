@@ -1,5 +1,4 @@
 import HomeOptionCard from '~/components/homeoptioncard.js';
-import NavBar from '../components/navbar.jsx'
 
 const Welcome = () => {
 
