@@ -2,18 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap');
 @import "tailwindcss";
 
+@property --home-border-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
 @theme {
   --text-tiny: 0.6rem;
   --font-homet: "Montserrat", sans-serif;
   --font-sign: "Momo Signature", sans-serif;
+
+  --animate-rotate-border: border-rotate 3s linear infinite;
+  @keyframes border-rotate {
+    to {
+      --home-border-angle: 360deg;
+    }
+  }
 }
 
 .navButton {
   @apply cursor-pointer text-gray-100 font-bold text-sm px-2 py-1 border-2 border-gray-100 hover:bg-gray-100 hover:text-gray-800 rounded-lg transition duration-300
-}
-
-.optionButton {
-  @apply cursor-pointer
 }
 
 .connectButton {

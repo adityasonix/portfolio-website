@@ -6,15 +6,15 @@ interface routeOptionType {
         link: string
     };
 }
-
+// bg-gradient-to-br from-slate-100 to-slate-900
 const HomeOptionCard = ({routeOption} : routeOptionType) => {
     return (
-        <button className="optionButton"> 
+        <button className="cursor-pointer"> 
             <a href={routeOption.link}>
-                <div className="bg-gradient-to-br from-cyan-700 to-blue-500 p-1 rounded-lg">
-                    <div className="flex justify-center items-center bg-gradient-to-r from-cyan-100 to-cyan-200 bg-black text-black p-4 text-5xl rounded-lg">
+                <div className="animate-rotate-border bg-conic/[from_var(--home-border-angle)] from-slate-900 via-slate-500 to-slate-900 p-[3px] rounded-2xl">
+                    <div className="flex justify-center items-center bg-gradient-to-r from-gray-700 to-zinc-800 text-zinc-100 py-2 px-6 text-4xl rounded-xl">
                         {routeOption.text} &nbsp;
-                        <img className="max-w-11 mt-1" src={routeOption.icon} />
+                        <img className="max-w-9 mt-1" src={routeOption.icon} />
                     </div>
                 </div>
             </a>

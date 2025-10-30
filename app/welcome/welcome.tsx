@@ -17,7 +17,7 @@ const Welcome = () => {
               <h1 className='mx-auto text-center text-zinc-100 text-5xl font-homet tracking-[-1%] sm:text-9xl'>Aditya Soni</h1>
             </header>
           </div>
-          <div className='grid grid-cols-2 gap-8'>
+          <div className='flex flex-col gap-4'>
             {
               routeOptions.map((routeOption) => (
                   <HomeOptionCard key={routeOption.id} routeOption={routeOption} />
