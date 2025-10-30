@@ -27,7 +27,7 @@ export const aboutText = [
 export const expCons = [
             {
                   "id" : "one",
-                  "timeline" : `2023 — Present`,
+                  "timeline" : `July 2023 — Present`,
                   "title" : `Software Developer @ SAP Labs`,
                   "expText" : `Worked in Agricultural Commodity Management (ACM) team. 
                   Collaborating across functional teams to design, develop and maintain, future-ready SAP solutions. With strong foundation in SAP ABAP and SAP RAP framework, 

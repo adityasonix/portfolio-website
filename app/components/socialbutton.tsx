@@ -1,7 +1,5 @@
 const SocialButton = () => {
 
-    //const connectLinks
-
     return (
         <>
         <button type="button" className="connectButton bg-gradient-to-br from-purple-500 to-orange-400">
@@ -37,7 +35,7 @@ const SocialButton = () => {
                     <img className="sm:max-w-8 max-w-6" src="github.svg" />
                     &nbsp; adityasonix
                 </div>
-                <p className="connectDescription">I'll be updating any technical projects and problem-solving code on my Github eventually.</p>
+                <p className="connectDescription">I'll be updating any technical projects and problem-solving code on my Github.</p>
             </a>
         </button>
         </>

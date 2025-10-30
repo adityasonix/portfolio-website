@@ -11,10 +11,10 @@ const Welcome = () => {
 
   return (
     <main className='min-h-screen relative bg-[url(cloud-bg.jpg)] bg-cover bg-center'>
-      <div className='h-screen flex flex-col justify-center items-center pb-12 gap-10'>
+      <div className='h-screen flex flex-col justify-center items-center pb-12 gap-12'>
           <div>
             <header>
-              <h1 className='mx-auto text-center text-5xl font-bold tracking-[-1%] sm:text-9xl'>Aditya Soni</h1>
+              <h1 className='mx-auto text-center text-zinc-100 text-5xl font-homet tracking-[-1%] sm:text-9xl'>Aditya Soni</h1>
             </header>
           </div>
           <div className='grid grid-cols-2 gap-8'>

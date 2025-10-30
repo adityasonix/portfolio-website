@@ -8,15 +8,15 @@ interface expDetailType {
 }
 const CareerCard = ({expDetail}: expDetailType) => {
     return (
-        <div className="flex flex-col items-center bg-sky-50 p-5 rounded-2xl shadow-inner shadow-light-100/10">
-            <div className="">
+        <div className="flex flex-col items-center bg-linear-to-br from-gray-700/50 to-stone-800/50 p-5 rounded-2xl shadow-inner shadow-light-100/20">
+            <div className="text-zinc-300 font-thin pb-1">
                 {expDetail.timeline}
             </div>
-            <div className="text-xl font-bold pb-3">
+            <div className="text-xl text-zinc-100 font-bold pb-3">
                 {expDetail.title}
             </div>
-            <hr className="border-1 container solid #000000"></hr>
-            <div className="text-sm p-2">
+            <div className="container h-px bg-gradient-to-r from-transparent via-zinc-50 to-transparent"></div>
+            <div className="text-sm text-zinc-200 p-2">
                 {expDetail.expText}
             </div>
         </div>

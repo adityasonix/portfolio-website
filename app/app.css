@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap');
 @import "tailwindcss";
 
 @theme {
   --text-tiny: 0.6rem;
+  --font-homet: "Montserrat", sans-serif;
+  --font-sign: "Momo Signature", sans-serif;
 }
 
 .navButton {
@@ -17,15 +21,15 @@
 }
 
 .connectAnchor {
-  @apply flex flex-col justify-center rounded-full px-9 py-1.5 bg-white
+  @apply flex flex-col justify-center rounded-full px-9 py-1.5 bg-radial from-gray-500 to-zinc-900
 }
 
 .connectDescription {
-  @apply text-tiny sm:text-xs max-w-xs sm:max-w-md text-gray-500 sm:pt-1
+  @apply text-tiny sm:text-xs max-w-xs sm:max-w-md text-zinc-300 sm:pt-1
 }
 
 .connectLinkTitle {
-  @apply flex items-center justify-center text-base sm:text-2xl
+  @apply flex items-center justify-center text-base text-zinc-100 sm:text-2xl
 }
 
 .careerTimeline {
