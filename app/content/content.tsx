@@ -1,7 +1,7 @@
 export const aboutText = [
       {
             "id" : "pro",
-            "textCon" : `I’m a Software Engineer from India with a deep passion for software development and problem-solving. 
+            "textCon" : `I’m a Software Engineer from India with a zeal for software development and problem-solving. 
                         I thrive on learning new technologies, tackling complex challenges, and continuously improving my skills to create high-quality, impactful solutions.`
       },
       {

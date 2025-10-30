@@ -19,6 +19,13 @@
       --home-border-angle: 360deg;
     }
   }
+
+  --animate-rotate-border-hover: border-rotate 0.8s linear infinite;
+  @keyframes border-rotate {
+    to {
+      --home-border-angle: 360deg;
+    }
+  }
 }
 
 .navButton {
