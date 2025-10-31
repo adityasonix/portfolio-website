@@ -9,12 +9,9 @@ interface bookOverviewType {
 }
 
 const BookCard = ({ bookOverview } : bookOverviewType) => {
-
-    const bookDetailLink = "bookshelf/" + bookOverview.id;
-
     return (
         <button className="cursor-pointer">
-            <a href={bookDetailLink}>
+            <a href={`bookshelf/${bookOverview.id}`}>
                 <div className="flex overflow-hidden bg-linear-to-br from-gray-700/50 to-stone-800/50 rounded-xl cursor-pointer shadow-inner shadow-light-100/20">
                     <img className="rounded-xl max-w-48" src="nazopanya.JPG" />
                     <div className="flex flex-col justify-center items-center gap-4 p-4">

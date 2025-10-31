@@ -49,6 +49,6 @@ export const allBooks = [
                   "title" : "Nazo no Kaori wa Panya Kara",
                   "author" : "Tsuchiya Usagi",
                   "category" : "Novel",
-                  "genre" : "Slice of Life, Mystery"
+                  "genre" : "Slice of Life, Mystery, Food"
             }
       ]
