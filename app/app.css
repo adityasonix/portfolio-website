@@ -9,7 +9,7 @@
 }
 
 @theme {
-  --text-tiny: 0.6rem;
+  --text-tiny: 0.5rem;
   --font-homet: "Montserrat", sans-serif;
   --font-sign: "Momo Signature", sans-serif;
 
@@ -20,7 +20,7 @@
     }
   }
 
-  --animate-rotate-border-hover: border-rotate 0.8s linear infinite;
+  --animate-rotate-border-hover: border-rotate 0.7s linear infinite;
   @keyframes border-rotate {
     to {
       --home-border-angle: 360deg;
