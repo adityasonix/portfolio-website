@@ -1,14 +1,7 @@
 import HomeOptionCard from '~/components/homeoptioncard.js';
+import { routeOptions } from '~/content/content';
 
 const Welcome = () => {
-
-  const routeOptions = [
-    {"id": "one", "text": "Who I Am", "icon": "man.svg", "link": "aboutme"}, 
-    {"id": "two", "text": "Shosetsu Shelf", "icon": "book.svg", "link": "connect"}, 
-    {"id": "three", "text": "Code & Career", "icon": "tech.svg", "link": "procareer"}, 
-    {"id": "four", "text": "Let\'s Connect", "icon": "connect.svg", "link": "connect"}
-  ];
-
   return (
     <main className='min-h-screen relative bg-[url(cloud-bg.jpg)] bg-cover bg-center'>
       <div className='h-screen flex flex-col justify-center items-center pb-12 gap-12'>

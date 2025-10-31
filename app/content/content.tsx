@@ -1,3 +1,10 @@
+export const routeOptions = [
+      {"id": "one", "text": "Who I Am", "icon": "man.svg", "link": "aboutme"}, 
+      {"id": "two", "text": "Shosetsu Shelf", "icon": "book.svg", "link": "connect"}, 
+      {"id": "three", "text": "Code & Career", "icon": "tech.svg", "link": "procareer"}, 
+      {"id": "four", "text": "Let\'s Connect", "icon": "connect.svg", "link": "connect"}
+];
+
 export const aboutText = [
       {
             "id" : "pro",
