@@ -1,11 +1,4 @@
-interface routeOptionType {
-    routeOption : {
-        id: string,
-        text: string,
-        icon: string,
-        link: string
-    };
-}
+import type { routeOptionType } from "~/utils/interfaces"
 
 const HomeOptionCard = ({routeOption} : routeOptionType) => {
     return (

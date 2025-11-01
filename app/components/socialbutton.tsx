@@ -1,5 +1,4 @@
 const SocialButton = () => {
-
     return (
         <>
         <button type="button" className="connectButton bg-gradient-to-br from-purple-500 to-orange-400">

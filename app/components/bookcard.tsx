@@ -1,12 +1,4 @@
-interface bookOverviewType {
-    bookOverview : {
-        id : string,
-        titleen : string,
-        author : string,
-        category : string,
-        genre : string
-    }
-}
+import type { bookOverviewType } from "~/utils/interfaces";
 
 const BookCard = ({ bookOverview } : bookOverviewType) => {
     return (

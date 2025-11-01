@@ -1,11 +1,5 @@
-interface expDetailType {
-    expDetail : {
-        id: string,
-        timeline: string,
-        title: string,
-        expText: string
-    }
-}
+import type { expDetailType } from "~/utils/interfaces";
+
 const CareerCard = ({expDetail}: expDetailType) => {
     return (
         <div className="flex flex-col items-center bg-linear-to-br from-gray-700/50 to-stone-800/50 p-5 rounded-2xl shadow-inner shadow-light-100/20">
