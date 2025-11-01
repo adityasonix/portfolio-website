@@ -46,9 +46,13 @@ export const expCons = [
 export const allBooks = [
             {
                   "id" : "one",
-                  "title" : "Nazo no Kaori wa Panya Kara",
-                  "author" : "Tsuchiya Usagi",
+                  "titlejp" : "謎の香りはパン屋から",
+                  "titleen" : "Nazo no Kaori wa Panya Kara",
+                  "author" : "土屋うさぎ / Tsuchiya Usagi",
                   "category" : "Novel",
-                  "genre" : "Slice of Life, Mystery, Food"
+                  "genre" : "Slice of Life, Mystery, Food",
+                  "publisher" : "宝島社 / TakaraJimaSha",
+                  "bookmeter" : "https://bookmeter.com/books/22353823",
+                  "bookwalker" : "https://bookwalker.jp/de1cf9d512-16ba-497f-b447-ab3751d04241/"
             }
       ]

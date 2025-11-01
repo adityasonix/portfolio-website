@@ -1,7 +1,7 @@
 interface bookOverviewType {
     bookOverview : {
         id : string,
-        title : string,
+        titleen : string,
         author : string,
         category : string,
         genre : string
@@ -17,7 +17,7 @@ const BookCard = ({ bookOverview } : bookOverviewType) => {
                     <div className="flex flex-col justify-center items-center gap-4 p-4">
                         <div className="flex flex-col items-center gap-1">
                             <div className="text-gray-400 text-tiny"> TITLE </div>
-                            <div className="text-zinc-100 text-sm font-bold"> {bookOverview.title} </div>
+                            <div className="text-zinc-100 text-sm font-bold"> {bookOverview.titleen} </div>
                         </div>
                         <div className="flex flex-col items-center gap-1">
                             <div className="text-gray-400 text-tiny"> AUTHOR </div>
