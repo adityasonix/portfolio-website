@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const BookCarousel = () => {
     // Temporary
-    const slides = ["/nazopanya1.PNG", "/nazopanya2.PNG", "/nazopanya3.PNG"];
+    const slides = ["https://cdn.adityasoni.dev/NazoPanya1.png", "https://cdn.adityasoni.dev/NazoPanya2.png", "https://cdn.adityasoni.dev/NazoPanya3.png"];
 
     const [current, setCurrent] = useState(0);
 
