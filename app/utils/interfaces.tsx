@@ -16,26 +16,15 @@ export interface expDetailType {
     }
 }
 
-export interface bookOverviewType {
-    bookOverview : {
-        id : string,
-        titleen : string,
-        author : string,
-        category : string,
-        genre : string
-    }
-}
-
 export interface bookDetailType {
-    bookDetail ?: {
-        id : string,
-        titlejp : string,
-        titleen : string,
-        author : string,
-        category : string,
-        genre : string,
-        publisher : string,
-        bookmeter : string,
-        bookwalker : string
-    }
+    id : number,
+    titlejp : string,
+    titleen : string,
+    author : string,
+    category : string,
+    genre : string,
+    publisher : string,
+    cover : string,
+    bookmeter ?: string,
+    bookwalker ?: string
 }

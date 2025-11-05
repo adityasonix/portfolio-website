@@ -1,7 +1,18 @@
-import { allBooks } from "~/content/content";
+import type { Route } from "./+types/postgallery";
 import BookCard from "~/components/bookcard";
+import type { bookDetailType } from "~/utils/interfaces";
 
-const PostGallery = () => {
+export const loader = async () => {
+    const response = await fetch(`http://localhost:8787/api/posts`);
+    if (!response.ok) throw new Error(`Error ${response.status}`);
+    const data = await response.json();
+    return data || [];
+}
+
+const PostGallery = ({ loaderData }: Route.ComponentProps) => {
+
+    const allBooks = loaderData;
+
     return (
         <main className='min-h-screen relative bg-[url(cloud-bg.jpg)] bg-cover bg-center'>
             <div className="relative h-screen flex flex-col justify-center items-center gap-4">
@@ -17,7 +28,7 @@ const PostGallery = () => {
                 </div>
                 <div className="flex flex-col gap-1 sm:gap-3 items-center">
                     {
-                        allBooks.map((bookOverview) => (
+                        allBooks.map((bookOverview : bookDetailType) => (
                             <BookCard key={bookOverview.id} bookOverview={bookOverview} />
                         ))
                     }

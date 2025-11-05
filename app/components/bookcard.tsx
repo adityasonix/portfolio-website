@@ -1,6 +1,10 @@
-import type { bookOverviewType } from "~/utils/interfaces";
+import type { bookDetailType } from "~/utils/interfaces";
 
-const BookCard = ({ bookOverview } : bookOverviewType) => {
+interface bookDetailProp {
+    bookOverview : bookDetailType;
+}
+
+const BookCard = ({ bookOverview } : bookDetailProp) => {
     return (
         <button className="cursor-pointer">
             <a href={`bookshelf/${bookOverview.id}`}>
