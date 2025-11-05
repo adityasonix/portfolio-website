@@ -1,9 +1,11 @@
 import { useState } from "react";
 
-const BookCarousel = () => {
-    // Temporary
-    const slides = ["https://cdn.adityasoni.dev/NazoPanya1.png", "https://cdn.adityasoni.dev/NazoPanya2.png", "https://cdn.adityasoni.dev/NazoPanya3.png"];
+interface imageUrlsProp {
+    imageUrls: string[]
+}
 
+const BookCarousel = ({ imageUrls } : imageUrlsProp) => {
+    
     const [current, setCurrent] = useState(0);
 
     const prevSlide = () => {
@@ -11,14 +13,14 @@ const BookCarousel = () => {
     }
 
     const nextSlide = () => {
-        if(current !== slides.length - 1) setCurrent(current + 1);
+        if(current !== imageUrls.length - 1) setCurrent(current + 1);
     }
 
     return(
         <div className="overflow-hidden relative rounded-2xl">
             <div className="flex transition ease-out duration-400" style={{ transform: `translateX(-${current * 100}%)` }}>
                 {
-                    slides.map((slide) => (
+                    imageUrls.map((slide) => (
                         <img key={slide} src={slide} />
                     ))
                 }
@@ -27,31 +29,12 @@ const BookCarousel = () => {
                 <button disabled={current === 0 ? true : false} className="cursor-pointer opacity-60 disabled:opacity-5 hover:opacity-90 ml-2" onClick={prevSlide}>
                     <img className="w-9" src="/carouselback.svg" />
                 </button>
-                <button disabled={current === slides.length - 1 ? true : false} className="cursor-pointer opacity-60 disabled:opacity-5 hover:opacity-90 mr-2" onClick={nextSlide}>
+                <button disabled={current === imageUrls.length - 1 ? true : false} className="cursor-pointer opacity-60 disabled:opacity-5 hover:opacity-90 mr-2" onClick={nextSlide}>
                     <img className="w-9" src="/carouselnext.svg" />
                 </button>
             </div>
         </div>
     )
-    // return(
-    //     <div className="flex items-center gap-3">
-    //         <button onClick={prevSlide}>
-    //             <img className="w-48" src="/carouselback.svg" />
-    //         </button>
-    //         <div className="overflow-hidden">
-    //             <div className="flex transition ease-out duration-400" style={{ transform: `translateX(-${current * 100}%)` }}>
-    //                 {
-    //                     slides.map((slide) => (
-    //                         <img src={slide} />
-    //                     ))
-    //                 }
-    //             </div>
-    //         </div>
-    //         <button onClick={nextSlide}>
-    //             <img className="w-48" src="/carouselnext.svg" />
-    //         </button>
-    //     </div>
-    // )
 }
 
 export default BookCarousel;

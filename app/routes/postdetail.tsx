@@ -14,6 +14,7 @@ export const loader = async ({ params }: LoaderFunctionArgs) => {
 const PostDetail = ({ loaderData }: Route.ComponentProps) => {
     
     const bookDetail = loaderData[0];
+    const imageUrls = JSON.parse(bookDetail.imagelinks);
 
     return (
         <main className='min-h-screen relative bg-[url(/cloud-bg.jpg)] bg-cover bg-center'>
@@ -29,7 +30,7 @@ const PostDetail = ({ loaderData }: Route.ComponentProps) => {
                     </h4>
                 </div>
                 <div className="flex justify-evenly items-center max-w-4/5 pt-4">
-                    <div className="w-2/5"><BookCarousel /></div>
+                    <div className="w-2/5"><BookCarousel imageUrls={imageUrls} /></div>
                     <BookDetailInfo bookDetail={bookDetail} />
                 </div>
             </div>
