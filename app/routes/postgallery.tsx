@@ -26,7 +26,7 @@ const PostGallery = ({ loaderData }: Route.ComponentProps) => {
                         </button>
                     </h4>
                 </div>
-                <div className="flex flex-col gap-1 sm:gap-3 items-center">
+                <div className="grid grid-cols-2 gap-1 sm:gap-3 items-center">
                     {
                         allBooks.map((bookOverview : bookDetailType) => (
                             <BookCard key={bookOverview.id} bookOverview={bookOverview} />

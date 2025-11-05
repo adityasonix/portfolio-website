@@ -31,11 +31,7 @@ const BookDetailInfo = ({ bookDetail } : bookDetailProp) => {
                 <div className="text-gray-400 text-xs"> KNOW MORE / BUY </div>
                 <div className="text-zinc-300 text-lg">
                     <a className='hover:text-white' href={bookDetail?.bookmeter} target="_blank" rel="noopener noreferrer">
-                        Bookmeter <img className="inline w-4" src="/external.svg" />
-                    </a>
-                    <span className="font-bold">&nbsp; &middot; &nbsp;</span>
-                    <a className="hover:text-white" href={bookDetail?.bookwalker} target="_blank" rel="noopener noreferrer">
-                        Bookwalker <img className="inline w-4" src="/external.svg" />
+                        <img className="inline w-4 pb-1" src="/bookmeter.svg" /> Bookmeter <img className="inline w-4" src="/external.svg" />
                     </a>
                 </div>
             </div>

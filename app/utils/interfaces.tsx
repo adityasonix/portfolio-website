@@ -25,6 +25,5 @@ export interface bookDetailType {
     genre : string,
     publisher : string,
     cover : string,
-    bookmeter ?: string,
-    bookwalker ?: string
+    bookmeter ?: string
 }

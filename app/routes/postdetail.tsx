@@ -12,16 +12,13 @@ export const loader = async ({ params }: LoaderFunctionArgs) => {
 }
 
 const PostDetail = ({ loaderData }: Route.ComponentProps) => {
-
-    // Need to find a better way to do it instead of fetching from the API again since
-    // all data is already fetched in book gallery page.
-    // Also check index access
+    
     const bookDetail = loaderData[0];
 
     return (
         <main className='min-h-screen relative bg-[url(/cloud-bg.jpg)] bg-cover bg-center'>
             <div className="relative h-screen flex flex-col justify-center items-center gap-4">
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-5">
                     <h1 className='mx-auto text-zinc-100 text-center text-xl font-homet tracking-[-1%] sm:text-4xl'>{bookDetail.titlejp}</h1>
                     <h4 className='flex justify-center mx-auto tracking-[-1%] sm:text-xl'>
                         <button type="button" className="">
