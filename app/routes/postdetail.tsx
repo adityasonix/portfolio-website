@@ -3,9 +3,11 @@ import type { Route } from "./+types/postdetail";
 import BookCarousel from "~/components/bookcarousel";
 import BookDetailInfo from "~/components/bookdetailinfo";
 
+const API_BASE_URL = 'https://api.adityasoni.dev';
+
 export const loader = async ({ params }: LoaderFunctionArgs) => {
     const { bookId } = params;
-    const response = await fetch(`http://localhost:8787/api/posts/${bookId}`);
+    const response = await fetch(`${API_BASE_URL}/api/posts/${bookId}`);
     if (!response.ok) throw new Error(`Error ${response.status}`);
     const data = await response.json();
     return data || [];

@@ -2,8 +2,10 @@ import type { Route } from "./+types/postgallery";
 import BookCard from "~/components/bookcard";
 import type { bookDetailType } from "~/utils/interfaces";
 
+const API_BASE_URL = 'https://api.adityasoni.dev';
+
 export const loader = async () => {
-    const response = await fetch(`http://localhost:8787/api/posts`);
+    const response = await fetch(`${API_BASE_URL}/api/posts`);
     if (!response.ok) throw new Error(`Error ${response.status}`);
     const data = await response.json();
     return data || [];
