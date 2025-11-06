@@ -20,9 +20,9 @@ const PostDetail = ({ loaderData }: Route.ComponentProps) => {
 
     return (
         <main className='min-h-screen relative bg-[url(/cloud-bg.jpg)] bg-cover bg-center'>
-            <div className="relative h-screen flex flex-col justify-center items-center gap-4">
+            <div className="relative h-screen flex flex-col justify-center items-center gap-4 py-12">
                 <div className="flex flex-col gap-5">
-                    <h1 className='mx-auto text-zinc-100 text-center text-xl font-homet tracking-[-1%] sm:text-4xl'>{bookDetail.titlejp}</h1>
+                    <h1 className='mx-auto text-zinc-100 text-center text-xl font-homet font-bold tracking-[-1%] sm:text-4xl'>{bookDetail.titlejp}</h1>
                     <h4 className='flex justify-center mx-auto tracking-[-1%] sm:text-xl'>
                         <button type="button" className="">
                             <a className="" href="/bookshelf">
@@ -31,8 +31,8 @@ const PostDetail = ({ loaderData }: Route.ComponentProps) => {
                         </button>
                     </h4>
                 </div>
-                <div className="flex justify-evenly items-center max-w-4/5 pt-4">
-                    <div className="w-2/5"><BookCarousel imageUrls={imageUrls} /></div>
+                <div className="flex overflow-auto flex-col sm:flex-row justify-evenly items-center max-w-5/6 pt-4">
+                    <div className="w-full sm:w-2/5"><BookCarousel imageUrls={imageUrls} /></div>
                     <BookDetailInfo bookDetail={bookDetail} />
                 </div>
             </div>
