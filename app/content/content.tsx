@@ -35,11 +35,19 @@ export const expCons = [
             {
                   "id" : "one",
                   "timeline" : `July 2023 — Present`,
-                  "title" : `Software Developer @ SAP Labs`,
+                  "title" : `Software Developer | SAP Labs`,
                   "expText" : `Worked in Agricultural Commodity Management (ACM) team. 
-                  Collaborating across functional teams to design, develop and maintain, future-ready SAP solutions. With strong foundation in SAP ABAP and SAP RAP framework, 
+                  Collaborating across functional teams to develop and maintain, future-ready SAP solutions. With strong foundation in SAP ABAP and SAP RAP framework, 
                   my career has been shaped by delivering high-impact solutions, optimizing performance, and driving customer success in complex enterprise environments. 
-                  Currently working in Commodity Pricing Engine (CPE) team delivering highly efficient solutions to Commodity industries/brokers.`
+                  Currently working in Commodity Pricing team delivering solutions to Commodity industries/brokers.`
+            },
+            {
+                  "id" : "two",
+                  "timeline" : `May — July 2022`,
+                  "title" : `Software Development Intern | SAP Labs`,
+                  "expText" : `Worked on Internal Reporting dashboard web application for users to intuitively create, search, access, and update information 
+                  including development status of their managed assets. Developed on front end using SAPUI5 and back end using Node.js CAP Model, and integrated to SAP HANA cloud database to store, 
+                  fetch and manage records (CRUD).`
             }
       ]
 

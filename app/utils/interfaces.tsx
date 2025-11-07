@@ -4,7 +4,8 @@ export interface routeOptionType {
         text: string,
         icon: string,
         link: string
-    };
+    },
+    iteratorIndex : number
 }
 
 export interface expDetailType {
