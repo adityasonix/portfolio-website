@@ -1,8 +1,9 @@
 export const routeOptions = [
       {"id": "one", "text": "Who I Am", "icon": "man.svg", "link": "aboutme"}, 
       {"id": "two", "text": "Shōsetsu Shelf", "icon": "book.svg", "link": "bookshelf"}, 
-      {"id": "three", "text": "Code & Career", "icon": "tech.svg", "link": "procareer"}, 
-      {"id": "four", "text": "Let\'s Connect", "icon": "connect.svg", "link": "connect"}
+      {"id": "three", "text": "Code & Career", "icon": "tech.svg", "link": "procareer"},
+      {"id": "four", "text": "Side Quests", "icon": "project.svg", "link": "sidequests"}, 
+      {"id": "five", "text": "Let\'s Connect", "icon": "connect.svg", "link": "connect"}
 ];
 
 export const aboutText = [
@@ -29,38 +30,34 @@ export const aboutText = [
             "id" : "foot",
             "textCon" : `I’m always excited to meet people who share similar interests — and even more so, those who can introduce me to new ideas, perspectives, and experiences.`
       }
-]
+];
 
 export const expCons = [
-            {
-                  "id" : "one",
-                  "timeline" : `July 2023 — Present`,
-                  "title" : `Software Developer | SAP Labs`,
-                  "expText" : `Worked in Agricultural Commodity Management (ACM) team. 
-                  Collaborating across functional teams to develop and maintain, future-ready SAP solutions. With strong foundation in SAP ABAP and SAP RAP framework, 
-                  my career has been shaped by delivering high-impact solutions, optimizing performance, and driving customer success in complex enterprise environments. 
-                  Currently working in Commodity Pricing team delivering solutions to Commodity industries/brokers.`
-            },
-            {
-                  "id" : "two",
-                  "timeline" : `May — July 2022`,
-                  "title" : `Software Development Intern | SAP Labs`,
-                  "expText" : `Worked on Internal Reporting dashboard web application for users to intuitively create, search, access, and update information 
-                  including development status of their managed assets. Developed on front end using SAPUI5 and back end using Node.js CAP Model, and integrated to SAP HANA cloud database to store, 
-                  fetch and manage records (CRUD).`
-            }
-      ]
+      {
+            "id" : "two",
+            "timeline" : `July 2023 — Present`,
+            "title" : `Software Developer | SAP Labs`,
+            "expText" : `Worked in Agricultural Commodity Management (ACM) team. 
+            Collaborating across functional teams to develop and maintain, future-ready SAP solutions. With strong foundation in SAP ABAP and SAP RAP framework, 
+            my career has been shaped by delivering high-impact solutions, optimizing performance, and driving customer success in complex enterprise environments. 
+            Currently working in Commodity Pricing team delivering solutions to Commodity industries/brokers.`
+      },
+      {
+            "id" : "one",
+            "timeline" : `May — July 2022`,
+            "title" : `Software Development Intern | SAP Labs`,
+            "expText" : `Worked on Internal Reporting dashboard web application for users to intuitively create, search, access, and update information 
+            including development status of their managed assets. Developed on front end using SAPUI5 and back end using Node.js CAP Model, and integrated to SAP HANA cloud database to store, 
+            fetch and manage records (CRUD).`
+      }
+];
 
-export const allBooks = [
-            {
-                  "id" : "one",
-                  "titlejp" : "謎の香りはパン屋から",
-                  "titleen" : "Nazo no Kaori wa Panya Kara",
-                  "author" : "土屋うさぎ / Tsuchiya Usagi",
-                  "category" : "Novel",
-                  "genre" : "Slice of Life, Mystery, Food",
-                  "publisher" : "宝島社 / TakaraJimaSha",
-                  "bookmeter" : "https://bookmeter.com/books/22353823",
-                  "bookwalker" : "https://bookwalker.jp/de1cf9d512-16ba-497f-b447-ab3751d04241/"
-            }
-      ]
+export const projectContents = [
+      {
+            "id" : "one",
+            "title" : "Portfolio Website",
+            "description" : "You're here right now! A website about me and everything I love, built with React.js, Tailwind CSS v4, and Cloudflare on the backend.",
+            "imgUrl" : "",
+            "footerLinks" : []
+      }
+];

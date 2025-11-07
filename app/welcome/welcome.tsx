@@ -14,7 +14,7 @@ const Welcome = () => {
                     <div className='flex justify-center items-center'>
                         <img className='object-scale-down w-36 sm:w-64 rounded-full' src='./profilepic.jpeg' />
                     </div>
-                    <div className='flex flex-col gap-4'>
+                    <div className='flex flex-col gap-3'>
                         {
                             routeOptions.map((routeOption, iteratorIndex) => (
                                 <HomeOptionCard key={routeOption.id} routeOption={routeOption} iteratorIndex={iteratorIndex} />
