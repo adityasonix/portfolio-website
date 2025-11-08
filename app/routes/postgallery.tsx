@@ -16,7 +16,7 @@ const PostGallery = ({ loaderData }: Route.ComponentProps) => {
     const allBooks = loaderData;
 
     return (
-        <main className='min-h-screen relative bg-[url(cloud-bg.jpg)] bg-cover bg-center'>
+        <main className='min-h-screen relative bg-[url(/cloud-bg.jpg)] bg-cover bg-center'>
             <div className="relative h-screen flex flex-col justify-center items-center gap-4 py-12">
                 <div className="flex flex-col gap-2">
                     <h1 className='mx-auto text-center text-zinc-100 text-4xl font-homet tracking-[-1%] sm:text-7xl'>Shōsetsu Shelf</h1>

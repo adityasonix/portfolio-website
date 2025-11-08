@@ -3,7 +3,7 @@ import { routeOptions } from '~/content/content';
 
 const Welcome = () => {
     return (
-        <main className='min-h-screen relative bg-[url(cloud-bg.jpg)] bg-cover bg-center'>
+        <main className='min-h-screen relative bg-[url(/cloud-bg.jpg)] bg-cover bg-center'>
             <div className='h-screen flex flex-col justify-center items-center pb-12 gap-12 px-6'>
                 <div>
                     <header>
