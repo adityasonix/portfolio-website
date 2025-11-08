@@ -1,9 +1,9 @@
 export const routeOptions = [
-      {"id": "one", "text": "Who I Am", "icon": "man.svg", "link": "aboutme"}, 
-      {"id": "two", "text": "Shōsetsu Shelf", "icon": "book.svg", "link": "bookshelf"}, 
-      {"id": "three", "text": "Code & Career", "icon": "tech.svg", "link": "procareer"},
-      {"id": "four", "text": "Side Quests", "icon": "project.svg", "link": "sidequests"}, 
-      {"id": "five", "text": "Let\'s Connect", "icon": "connect.svg", "link": "connect"}
+      {"id": "one", "text": "Who I Am", "icon": "/man.svg", "link": "aboutme"}, 
+      {"id": "two", "text": "Shōsetsu Shelf", "icon": "/book.svg", "link": "bookshelf"}, 
+      {"id": "three", "text": "Code & Career", "icon": "/tech.svg", "link": "procareer"},
+      {"id": "four", "text": "Side Quests", "icon": "/project.svg", "link": "sidequests"}, 
+      {"id": "five", "text": "Let\'s Connect", "icon": "/connect.svg", "link": "connect"}
 ];
 
 export const aboutText = [
@@ -60,7 +60,7 @@ export const projectContents = [
                         My sandbox for code, ideas, and projects — a place where I design, build, and break things to understand them better. 
                         Take a look around, and I hope something here sparks your curiosity.`,
             "techstack" : ["React", "TailwindCSS", "Cloudflare"],
-            "imgUrl" : "./websiteimage.png",
+            "imgUrl" : "/websiteimage.png",
             "footerLinks" : ["https://github.com/adityasonix"]
       }
 ];

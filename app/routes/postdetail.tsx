@@ -2,6 +2,7 @@ import type { LoaderFunctionArgs } from "react-router";
 import type { Route } from "./+types/postdetail";
 import BookCarousel from "~/components/bookcarousel";
 import BookDetailInfo from "~/components/bookdetailinfo";
+import type { bookDetailFetch } from "~/utils/interfaces";
 
 const API_BASE_URL = 'https://api.adityasoni.dev';
 
@@ -15,7 +16,7 @@ export const loader = async ({ params }: LoaderFunctionArgs) => {
 
 const PostDetail = ({ loaderData }: Route.ComponentProps) => {
     
-    const bookDetail = loaderData[0];
+    const bookDetail = (loaderData as bookDetailFetch[])[0];
     const imageUrls = JSON.parse(bookDetail.imagelinks);
 
     return (
@@ -26,7 +27,7 @@ const PostDetail = ({ loaderData }: Route.ComponentProps) => {
                     <h4 className='flex justify-center mx-auto tracking-[-1%] sm:text-xl'>
                         <button type="button" className="">
                             <a className="" href="/bookshelf">
-                                <img className="max-w-4 sm:max-w-7" src="/back.svg" />
+                                <img className="max-w-6 sm:max-w-7" src="/back.svg" />
                             </a>
                         </button>
                     </h4>

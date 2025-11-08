@@ -10,7 +10,7 @@ const Welcome = () => {
                         <h1 className='mx-auto text-center text-zinc-100 text-6xl font-homet tracking-[-1%] sm:text-9xl'>Aditya Soni</h1>
                     </header>
                 </div>
-                <div className='flex flex-col sm:flex-row gap-10 sm:gap-20'>
+                <div className='overflow-auto flex flex-col sm:flex-row gap-10 sm:gap-20 sm:px-16'>
                     <div className='flex justify-center items-center'>
                         <img className='object-scale-down w-36 sm:w-64 rounded-full' src='./profilepic.jpeg' />
                     </div>

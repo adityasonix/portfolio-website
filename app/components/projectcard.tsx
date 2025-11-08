@@ -28,7 +28,7 @@ const ProjectCard = ({ content } : projectContentType) => {
                 </div>
                 <div className="text-zinc-100 text-xs sm:text-sm">
                     <a className='hover:text-white' href={content.footerLinks[0]} target="_blank" rel="noopener noreferrer">
-                        <img className="inline w-6 pb-1" src="./githublight.svg" />
+                        <img className="inline w-6 pb-1" src="/githublight.svg" />
                     </a>
                 </div>
             </div>

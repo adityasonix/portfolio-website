@@ -13,7 +13,7 @@ export const loader = async () => {
 
 const PostGallery = ({ loaderData }: Route.ComponentProps) => {
 
-    const allBooks = loaderData;
+    const allBooks = loaderData as bookDetailType[];
 
     return (
         <main className='min-h-screen relative bg-[url(/cloud-bg.jpg)] bg-cover bg-center'>
@@ -23,7 +23,7 @@ const PostGallery = ({ loaderData }: Route.ComponentProps) => {
                     <h4 className='flex justify-center mx-auto tracking-[-1%] sm:text-2xl'>
                         <button type="button" className="">
                             <a className="" href="/">
-                                <img className="max-w-8 sm:max-w-12" src="home.svg" />
+                                <img className="max-w-8 sm:max-w-12" src="/home.svg" />
                             </a>
                         </button>
                     </h4>

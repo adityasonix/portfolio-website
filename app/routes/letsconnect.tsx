@@ -9,12 +9,12 @@ const LetsConnect = () => {
                     <h4 className='flex justify-center mx-auto tracking-[-1%] sm:text-2xl'>
                         <button type="button" className="">
                             <a className="" href="/">
-                                <img className="max-w-8 sm:max-w-12" src="home.svg" />
+                                <img className="max-w-8 sm:max-w-12" src="/home.svg" />
                             </a>
                         </button>
                     </h4>
                 </div>
-                <div className="flex flex-col gap-1 sm:gap-3 items-center">
+                <div className="overflow-auto flex flex-col gap-1 sm:gap-3 items-center">
                     <SocialButton />
                 </div>
             </div>

@@ -28,3 +28,17 @@ export interface bookDetailType {
     cover : string,
     bookmeter ?: string
 }
+
+export interface bookDetailFetch {
+    id : number,
+    titlejp : string,
+    titleen : string,
+    author : string,
+    category : string,
+    genre : string,
+    publisher : string,
+    cover : string,
+    book_id: number,
+    imagelinks: string,
+    bookmeter ?: string
+}
