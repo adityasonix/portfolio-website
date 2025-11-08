@@ -56,8 +56,11 @@ export const projectContents = [
       {
             "id" : "one",
             "title" : "Portfolio Website",
-            "description" : "You're here right now! A website about me and everything I love, built with React.js, Tailwind CSS v4, and Cloudflare on the backend.",
-            "imgUrl" : "",
-            "footerLinks" : []
+            "description" : `You're here right now! A website about me and everything I love. 
+                        My sandbox for code, ideas, and projects — a place where I design, build, and break things to understand them better. 
+                        Take a look around, and I hope something here sparks your curiosity.`,
+            "techstack" : ["React", "TailwindCSS", "Cloudflare"],
+            "imgUrl" : "./websiteimage.png",
+            "footerLinks" : ["https://github.com/adityasonix"]
       }
 ];

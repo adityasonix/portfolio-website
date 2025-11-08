@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&display=swap');
 @import "tailwindcss";
 
 @property --home-border-angle {
@@ -13,6 +14,7 @@
   --text-little: 0.6rem;
   --font-homet: "Montserrat", sans-serif;
   --font-sign: "Momo Signature", sans-serif;
+  --font-techstack: "Roboto Mono", sans-serif;
 
   --animate-rotate-border: border-rotate 3s linear infinite;
   @keyframes border-rotate {
