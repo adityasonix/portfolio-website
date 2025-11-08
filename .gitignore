@@ -5,5 +5,5 @@
 /.react-router/
 /build/
 
-# Temporary Image
-/public/nazopanya*
+# Wrangler
+/.wrangler
