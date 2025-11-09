@@ -12,7 +12,7 @@ const Welcome = () => {
                 </div>
                 <div className='overflow-auto flex flex-col sm:flex-row gap-10 sm:gap-20 sm:px-16'>
                     <div className='flex justify-center items-center'>
-                        <img className='object-scale-down w-36 sm:w-64 rounded-full' src='./profilepic.jpeg' />
+                        <img className='object-scale-down w-36 sm:w-64 rounded-full' src='./profilepic.jpeg' alt='Aditya profile avatar' />
                     </div>
                     <div className='flex flex-col gap-3'>
                         {

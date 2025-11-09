@@ -1,15 +1,10 @@
-interface projectContentType {
-    content : {
-        id : string,
-        title : string,
-        description : string,
-        techstack : string[],
-        imgUrl : string,
-        footerLinks : string[]
-    }
+import type { projectContentType } from "~/utils/interfaces"
+
+interface projectContentPropType {
+    content : projectContentType
 }
 
-const ProjectCard = ({ content } : projectContentType) => {
+const ProjectCard = ({ content } : projectContentPropType) => {
     return (
         <div className="flex flex-col sm:flex-row w-full sm:gap-3">
             <div className="flex flex-col gap-3 justify-center items-center max-w-96 p-6 rounded-2xl">
@@ -33,7 +28,7 @@ const ProjectCard = ({ content } : projectContentType) => {
                 </div>
             </div>
             <div className="w-full flex justify-center items-center">
-                <img className="rounded-lg sm:w-5/6 shadow-lg" src={content.imgUrl} />
+                <img className="rounded-lg sm:w-5/6 shadow-lg" src={content.imgUrl} alt={`Preview image for ${content.title}`} />
             </div>
         </div>
     )

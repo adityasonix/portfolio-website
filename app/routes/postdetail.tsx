@@ -27,7 +27,7 @@ const PostDetail = ({ loaderData }: Route.ComponentProps) => {
                     <h4 className='flex justify-center mx-auto tracking-[-1%] sm:text-xl'>
                         <button type="button" className="">
                             <a className="" href="/bookshelf">
-                                <img className="max-w-6 sm:max-w-7" src="/back.svg" />
+                                <img className="max-w-6 sm:max-w-7" src="/back.svg" alt="Go back to Gallery" />
                             </a>
                         </button>
                     </h4>

@@ -9,7 +9,7 @@ const PageNotFound = () => {
                 <h4 className='flex sm:text-2xl'>
                     <button type="button" className="cursor-pointer border-2 border-sky-300 rounded-lg">
                         <a className="flex items-center p-2" href="/">
-                            <span className="text-zinc-100">Let's take you home &nbsp;</span> <img className="inline max-w-6 sm:max-w-8" src="/home.svg" />
+                            <span className="text-zinc-100">Let's take you home &nbsp;</span> <img className="inline max-w-6 sm:max-w-8" src="/home.svg" alt="Go to Home" />
                         </a>
                     </button>
                 </h4>

@@ -9,7 +9,7 @@ const AboutMe = () => {
                     <h4 className='flex justify-center mx-auto tracking-[-1%] sm:text-2xl'>
                         <button type="button" className="">
                             <a className="" href="/">
-                                <img className="max-w-8 sm:max-w-12" src="home.svg" />
+                                <img className="max-w-8 sm:max-w-12" src="home.svg" alt="Go to Home" />
                             </a>
                         </button>
                     </h4>

@@ -42,3 +42,12 @@ export interface bookDetailFetch {
     imagelinks: string,
     bookmeter ?: string
 }
+
+export interface projectContentType {
+    id : string,
+    title : string,
+    description : string,
+    techstack : string[],
+    imgUrl : string,
+    footerLinks : string[]
+}
