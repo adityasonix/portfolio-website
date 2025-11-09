@@ -61,6 +61,6 @@ export const projectContents = [
                         Take a look around, and I hope something here sparks your curiosity.`,
             "techstack" : ["React", "TailwindCSS", "Cloudflare"],
             "imgUrl" : "/websiteimage.png",
-            "footerLinks" : ["https://github.com/adityasonix"]
+            "footerLinks" : ["https://github.com/adityasonix/portfolio-website"]
       }
 ];
