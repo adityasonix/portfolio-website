@@ -1,5 +1,6 @@
 import type { Route } from "./+types/postgallery";
 import BookCard from "~/components/bookcard";
+import ClickPopup from "~/components/clickpopup";
 import type { bookDetailType } from "~/utils/interfaces";
 
 const API_BASE_URL = 'https://api.adityasoni.dev';
@@ -28,9 +29,10 @@ const PostGallery = ({ loaderData }: Route.ComponentProps) => {
                         </button>
                     </h4>
                 </div>
+                <ClickPopup />
                 <div className="overflow-auto grid grid-cols-1 sm:grid-cols-2 gap-y-4 sm:gap-y-6 sm:gap-x-12 items-center px-12 sm:px-36">
                     {
-                        allBooks.map((bookOverview : bookDetailType) => (
+                        allBooks.map((bookOverview: bookDetailType) => (
                             <BookCard key={bookOverview.id} bookOverview={bookOverview} />
                         ))
                     }

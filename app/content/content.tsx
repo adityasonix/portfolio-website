@@ -45,7 +45,7 @@ export const expCons = [
       {
             "id" : "one",
             "timeline" : `May — July 2022`,
-            "title" : `Software Development Intern | SAP Labs`,
+            "title" : `Intern | SAP Labs`,
             "expText" : `Worked on Internal Reporting dashboard web application for users to intuitively create, search, access, and update information 
             including development status of their managed assets. Developed on front end using SAPUI5 and back end using Node.js CAP Model, and integrated to SAP HANA cloud database to store, 
             fetch and manage records (CRUD).`
