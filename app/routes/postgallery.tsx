@@ -3,6 +3,12 @@ import BookCard from "~/components/bookcard";
 import ClickPopup from "~/components/clickpopup";
 import type { bookDetailType } from "~/utils/interfaces";
 
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "Aditya | Book Gallery" },
+  ];
+}
+
 const API_BASE_URL = 'https://api.adityasoni.dev';
 
 export const loader = async () => {

@@ -1,4 +1,11 @@
+import type { Route } from "./+types/aboutme";
 import { aboutText } from "~/content/content";
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "Aditya | About Me" },
+  ];
+}
 
 const AboutMe = () => {
     return (

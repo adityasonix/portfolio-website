@@ -1,5 +1,12 @@
 import { expCons } from "~/content/content";
 import CareerCard from "~/components/careercard";
+import type { Route } from "./+types/procareer";
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "Aditya | Work Experience" },
+  ];
+}
 
 const ProCareer = () => {
     return (

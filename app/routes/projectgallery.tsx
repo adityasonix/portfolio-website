@@ -1,5 +1,12 @@
 import ProjectCard from "~/components/projectcard"
 import { projectContents } from "~/content/content"
+import type { Route } from "./+types/projectgallery";
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "Aditya | Personal Projects" },
+  ];
+}
 
 const ProjectGallery = () => {
     return (

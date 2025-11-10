@@ -4,6 +4,12 @@ import BookCarousel from "~/components/bookcarousel";
 import BookDetailInfo from "~/components/bookdetailinfo";
 import type { bookDetailFetch } from "~/utils/interfaces";
 
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "Aditya | Reading" },
+  ];
+}
+
 const API_BASE_URL = 'https://api.adityasoni.dev';
 
 export const loader = async ({ params }: LoaderFunctionArgs) => {

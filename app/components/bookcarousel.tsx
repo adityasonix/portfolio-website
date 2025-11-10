@@ -27,10 +27,10 @@ const BookCarousel = ({ imageUrls } : imageUrlsProp) => {
             </div>
             <div className="absolute top-0 flex justify-between items-center w-full h-full">
                 <button disabled={current === 0 ? true : false} className="cursor-pointer opacity-60 disabled:opacity-5 hover:opacity-90 ml-2" onClick={prevSlide}>
-                    <img className="w-9" src="/carouselback.svg" alt="Back icon" />
+                    <img className="w-6 sm:w-9" src="/carouselback.svg" alt="Back icon" />
                 </button>
                 <button disabled={current === imageUrls.length - 1 ? true : false} className="cursor-pointer opacity-60 disabled:opacity-5 hover:opacity-90 mr-2" onClick={nextSlide}>
-                    <img className="w-9" src="/carouselnext.svg" alt="Next icon" />
+                    <img className="w-6 sm:w-9" src="/carouselnext.svg" alt="Next icon" />
                 </button>
             </div>
         </div>

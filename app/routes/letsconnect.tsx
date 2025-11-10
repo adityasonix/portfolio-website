@@ -1,4 +1,11 @@
 import SocialButton from "~/components/socialbutton";
+import type { Route } from "./+types/letsconnect";
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "Aditya | Connect" },
+  ];
+}
 
 const LetsConnect = () => {
     return (
