@@ -7,7 +7,7 @@ const ClickPopup = () => {
     // Show popup
     useEffect(() => {
         setShowPopup(true);
-        const timer = setTimeout(() => setShowPopup(false), 1200);
+        const timer = setTimeout(() => setShowPopup(false), 1800);
         return () => clearTimeout(timer);
     }, []);
 
