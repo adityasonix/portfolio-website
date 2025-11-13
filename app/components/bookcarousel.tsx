@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { handleImageError } from "~/utils/handlefallback";
 
 interface imageUrlsProp {
     imageUrls: string[]
@@ -21,7 +22,7 @@ const BookCarousel = ({ imageUrls } : imageUrlsProp) => {
             <div className="flex transition ease-out duration-400" style={{ transform: `translateX(-${current * 100}%)` }}>
                 {
                     imageUrls.map((slide) => (
-                        <img key={slide} src={slide} alt="Images with book synopsis and comments in english" />
+                        <img key={slide} onError={handleImageError} src={slide} alt="Images with book synopsis and comments in english" />
                     ))
                 }
             </div>
