@@ -2,8 +2,6 @@
 
 🚀 **Live:** [adityasoni.dev](https://adityasoni.dev)
 
-➕ **API Repo:** [portfolio-backend](https://github.com/adityasonix/portfolio-backend)
-
 A website about me and everything I love. Please have a look around. Cheers!
 
 ## 💡 Features
