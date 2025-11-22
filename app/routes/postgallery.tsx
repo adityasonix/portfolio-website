@@ -1,6 +1,5 @@
 import type { Route } from "./+types/postgallery";
 import BookCard from "~/components/bookcard";
-import BookSwitch from "~/components/bookswitch";
 import ClickPopup from "~/components/clickpopup";
 import type { bookDetailType } from "~/utils/interfaces";
 
@@ -27,15 +26,14 @@ const PostGallery = ({ loaderData }: Route.ComponentProps) => {
         <main className='min-h-screen relative bg-[url(/cloud-bg.jpg)] bg-cover bg-center'>
             <div className="relative flex flex-col justify-center items-center gap-4 py-12">
                 <div className="flex flex-col gap-2">
-                    <h1 className='mx-auto text-center text-zinc-100 text-4xl font-homet tracking-[-1%] sm:text-6xl'>Shōsetsu Shelf</h1>
+                    <h1 className='mx-auto text-center text-zinc-100 text-4xl font-homet tracking-[-1%] sm:text-7xl'>Shōsetsu Shelf</h1>
                     <h4 className='flex justify-center mx-auto tracking-[-1%]'>
                         <button type="button" className="">
                             <a className="" href="/">
-                                <img className="max-w-8 sm:max-w-11" src="/home.svg" alt="Go to Home" />
+                                <img className="max-w-8 sm:max-w-12" src="/home.svg" alt="Go to Home" />
                             </a>
                         </button>
                     </h4>
-                    <BookSwitch />
                 </div>
                 <ClickPopup />
                 <div className="overflow-auto grid grid-cols-1 sm:grid-cols-2 gap-y-4 sm:gap-y-6 sm:gap-x-12 items-center px-12 sm:px-36">

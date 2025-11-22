@@ -11,10 +11,10 @@ const SocialButton = () => {
             </a>
         </button>
         <button type="button" className="connectButton bg-gradient-to-br from-sky-400 to-blue-700">
-            <a className="connectAnchor" href="https://www.linkedin.com/in/soniaditya10" target="_blank" rel="noopener noreferrer">
+            <a className="connectAnchor" href="https://www.linkedin.com/in/adityasonix" target="_blank" rel="noopener noreferrer">
                 <div className="connectLinkTitle">
                     <img className="sm:max-w-9 max-w-7" src="/linkedin.svg" alt="link to linkedin" />
-                    &nbsp; soniaditya10
+                    &nbsp; adityasonix
                 </div>
                 <p className="connectDescription">My professional profile, work experience, and technical expertise. Just LinkedIn stuff.</p>
             </a>
