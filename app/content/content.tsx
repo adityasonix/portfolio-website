@@ -37,10 +37,10 @@ export const expCons = [
             "id" : "two",
             "timeline" : `July 2023 — Present`,
             "title" : `Software Developer | SAP Labs`,
-            "expText" : `Worked in Agricultural Commodity Management (ACM) team. 
+            "expText" : `Worked in product for Agribusiness. 
             Collaborating across functional teams to develop and maintain, future-ready SAP solutions. With strong foundation in SAP ABAP and SAP RAP framework, 
             my career has been shaped by delivering high-impact solutions, optimizing performance, and driving customer success in complex enterprise environments. 
-            Currently working in Commodity Pricing team delivering solutions to Commodity industries/brokers.`
+            Currently working in Commodity Pricing team.`
       },
       {
             "id" : "one",
