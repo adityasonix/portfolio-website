@@ -46,7 +46,7 @@ const PostGallery = ({ loaderData }: Route.ComponentProps) => {
                             </a>
                         </button>
                     </h4>
-                    {/* <BookSwitch isJPChecked={isJPBooks} onLangSwitch={setIsJPBooks} /> */}
+                    <BookSwitch isJPChecked={isJPBooks} onLangSwitch={setIsJPBooks} />
                 </div>
                 <ClickPopup />
                 <div className="overflow-auto grid grid-cols-1 sm:grid-cols-2 gap-y-4 sm:gap-y-6 sm:gap-x-12 items-center px-12 sm:px-36">
