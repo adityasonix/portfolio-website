@@ -1,5 +1,7 @@
 import type { Route } from "./+types/postgallery";
+import { useState, useEffect } from "react";
 import BookCard from "~/components/bookcard";
+import BookSwitch from "~/components/bookswitch";
 import ClickPopup from "~/components/clickpopup";
 import type { bookDetailType } from "~/utils/interfaces";
 
@@ -21,6 +23,16 @@ export const loader = async () => {
 const PostGallery = ({ loaderData }: Route.ComponentProps) => {
 
     const allBooks = loaderData as bookDetailType[];
+    const [isJPBooks, setIsJPBooks] = useState(true);
+    const [filterLangBooks, setfilterLangBooks] = useState<bookDetailType[]>([]);
+
+    useEffect(() => {
+        if (isJPBooks){
+            setfilterLangBooks(allBooks.filter(book => book.originallang === 'JP'))
+        } else {
+            setfilterLangBooks(allBooks.filter(book => book.originallang === 'EN'))
+        }
+    }, [isJPBooks])
 
     return (
         <main className='min-h-screen relative bg-[url(/cloud-bg.jpg)] bg-cover bg-center'>
@@ -34,11 +46,12 @@ const PostGallery = ({ loaderData }: Route.ComponentProps) => {
                             </a>
                         </button>
                     </h4>
+                    {/* <BookSwitch isJPChecked={isJPBooks} onLangSwitch={setIsJPBooks} /> */}
                 </div>
                 <ClickPopup />
                 <div className="overflow-auto grid grid-cols-1 sm:grid-cols-2 gap-y-4 sm:gap-y-6 sm:gap-x-12 items-center px-12 sm:px-36">
                     {
-                        allBooks.map((bookOverview: bookDetailType) => (
+                        filterLangBooks.map((bookOverview: bookDetailType) => (
                             <BookCard key={bookOverview.id} bookOverview={bookOverview} />
                         ))
                     }

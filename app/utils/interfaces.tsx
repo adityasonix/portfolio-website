@@ -19,6 +19,7 @@ export interface expDetailType {
 
 export interface bookDetailType {
     id : number,
+    originallang: string,
     titlejp : string,
     titleen : string,
     author : string,
@@ -26,11 +27,13 @@ export interface bookDetailType {
     genre : string,
     publisher : string,
     cover : string,
-    bookmeter ?: string
+    bookmeter ?: string,
+    amazon ?: string
 }
 
 export interface bookDetailFetch {
     id : number,
+    originallang: string,
     titlejp : string,
     titleen : string,
     author : string,
@@ -40,7 +43,8 @@ export interface bookDetailFetch {
     cover : string,
     book_id: number,
     imagelinks: string,
-    bookmeter ?: string
+    bookmeter ?: string,
+    amazon ?: string
 }
 
 export interface projectContentType {
