@@ -27,7 +27,7 @@ const PostDetail = ({ loaderData }: Route.ComponentProps) => {
 
     return (
         <>
-            { isJPBook && (<BookDetailInfoJp bookDetail={bookDetail} imageUrls={JSON.parse(bookDetail.imagelinks)} />)}
+            { isJPBook && <BookDetailInfoJp bookDetail={bookDetail} imageUrls={JSON.parse(bookDetail.imagelinks)} />}
             { !isJPBook && <BookDetailInfoEn bookDetail={bookDetail} />}
         </>
     )

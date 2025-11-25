@@ -1,9 +1,9 @@
 import BookDetailInfoCard from "./bookdetailinfocard"
 import BookCarousel from "./bookcarousel"
-import type { bookDetailType } from "~/utils/interfaces";
+import type { bookDetailFetch } from "~/utils/interfaces";
 
 interface bookDetailPropJP {
-    bookDetail : bookDetailType
+    bookDetail : bookDetailFetch
     imageUrls : any
 }
 

@@ -43,6 +43,8 @@ export interface bookDetailFetch {
     cover : string,
     book_id: number,
     imagelinks: string,
+    reviewtext: string,
+    reviewtextspoiler: string,
     bookmeter ?: string,
     amazon ?: string
 }
