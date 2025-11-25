@@ -4,7 +4,7 @@ interface bookDetailProp {
     bookDetail : bookDetailType;
 }
 
-const BookDetailInfo = ({ bookDetail } : bookDetailProp) => {
+const BookDetailInfoCard = ({ bookDetail } : bookDetailProp) => {
     return (
         <div className="w-full sm:w-2/5 flex flex-col justify-center items-center gap-1 sm:gap-6 my-6 sm:my-4 shadow-xl p-3 rounded-2xl bg-linear-to-br/oklab from-grey-700/40 to-zinc-600/60">
             <div className="sm:hidden container h-px bg-gradient-to-r from-transparent via-zinc-50 to-transparent mb-3"></div>
@@ -40,4 +40,4 @@ const BookDetailInfo = ({ bookDetail } : bookDetailProp) => {
     )
 }
 
-export default BookDetailInfo;
+export default BookDetailInfoCard;
