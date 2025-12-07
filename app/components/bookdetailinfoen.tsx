@@ -1,4 +1,3 @@
-import BookDetailInfoCard from "./bookdetailinfocard"
 import type { bookDetailFetch } from "~/utils/interfaces";
 import { handleImageError } from "~/utils/handlefallback";
 import ReviewSpoiler from "./reviewspoiler";
@@ -37,6 +36,11 @@ const BookDetailInfoEn = ({ bookDetail }: bookDetailPropEN) => {
                                         <div key={index} className="text-zinc-100 text-sm sm:text-base font-en-review">{p}</div>
                                     ))
                                 }
+                            </div>
+                            <div className="text-zinc-100 text-xs sm:text-sm px-2 border-1 border-orange-300 bg-zinc-900 rounded-lg">
+                                <a href={bookDetail.amazon} target="_blank" rel="noopener noreferrer">
+                                    Listen on <img className="inline w-5 font-homet pb-px" src="/audible.svg" />
+                                </a>
                             </div>
                         </div>
                     </div>
